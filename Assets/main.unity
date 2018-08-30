@@ -139,7 +139,7 @@ Light:
   serializedVersion: 8
   m_Type: 1
   m_Color: {r: 1, g: 0.95686275, b: 0.8392157, a: 1}
-  m_Intensity: 1
+  m_Intensity: 3
   m_Range: 10
   m_SpotAngle: 30
   m_CookieSize: 10
@@ -181,7 +181,8 @@ Transform:
 --- !u!1 &693033953
 GameObject:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
+  m_PrefabParentObject: {fileID: 1368368095072542, guid: bf758788ab11a4555af9787e5d548fad,
+    type: 2}
   m_PrefabInternal: {fileID: 0}
   serializedVersion: 5
   m_Component:
@@ -199,7 +200,8 @@ GameObject:
 ParticleSystemRenderer:
   serializedVersion: 4
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
+  m_PrefabParentObject: {fileID: 199213420954684000, guid: bf758788ab11a4555af9787e5d548fad,
+    type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 693033953}
   m_Enabled: 1
@@ -252,7 +254,8 @@ ParticleSystemRenderer:
 --- !u!198 &693033955
 ParticleSystem:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
+  m_PrefabParentObject: {fileID: 198317640172556352, guid: bf758788ab11a4555af9787e5d548fad,
+    type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 693033953}
   serializedVersion: 5
@@ -268,7 +271,7 @@ ParticleSystem:
   startDelay:
     serializedVersion: 2
     minMaxState: 0
-    scalar: 0
+    scalar: 1
     minScalar: 0
     maxCurve:
       serializedVersion: 2
@@ -309,14 +312,14 @@ ParticleSystem:
   moveWithTransform: 0
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 1
-  randomSeed: -757473571
+  randomSeed: 1363320065
   InitialModule:
     serializedVersion: 3
     enabled: 1
     startLifetime:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 15
+      scalar: 13
       minScalar: 5
       maxCurve:
         serializedVersion: 2
@@ -357,7 +360,7 @@ ParticleSystem:
     startSpeed:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 5
+      scalar: 9
       minScalar: 5
       maxCurve:
         serializedVersion: 2
@@ -461,7 +464,7 @@ ParticleSystem:
     startSize:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 0.4
+      scalar: 0.8
       minScalar: 1
       maxCurve:
         serializedVersion: 2
@@ -753,7 +756,7 @@ ParticleSystem:
     serializedVersion: 5
     enabled: 1
     type: 4
-    angle: 25
+    angle: 23
     length: 5
     boxThickness: {x: 0, y: 0, z: 0}
     radiusThickness: 1
@@ -3658,7 +3661,8 @@ ParticleSystem:
 --- !u!4 &693033956
 Transform:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
+  m_PrefabParentObject: {fileID: 4763496071293818, guid: bf758788ab11a4555af9787e5d548fad,
+    type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 693033953}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
@@ -3680,6 +3684,7 @@ GameObject:
   - component: {fileID: 2012196239}
   - component: {fileID: 2012196238}
   - component: {fileID: 2012196242}
+  - component: {fileID: 2012196243}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -3744,7 +3749,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2012196237}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1, z: -33.4}
+  m_LocalPosition: {x: 0, y: -4.9, z: -118.7}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -3756,7 +3761,7 @@ LensFlare:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2012196237}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Flare: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_Brightness: 1
@@ -3765,3 +3770,15 @@ LensFlare:
     serializedVersion: 2
     m_Bits: 6
   m_Directional: 0
+--- !u!114 &2012196243
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2012196237}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff26db721962cdf4a8edcdfa9a767d2a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  profile: {fileID: 11400000, guid: 9b82400bf16084b2889f2dba295977f0, type: 2}
